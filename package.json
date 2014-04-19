@@ -1,0 +1,19 @@
+{
+  "name": "mason",
+  "version": "0.0.1",
+  "description": "Real DOM mason",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lafaulx/mason.git"
+  },
+  "author": "Yaroslav Kravchenko <yaroslav@fleve.co>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/lafaulx/mason/issues"
+  },
+  "homepage": "https://github.com/lafaulx/mason",
+  "devDependencies": {
+    "gulp": "^3.6.1",
+    "gulp-uglify": "^0.2.1"
+  }
+}

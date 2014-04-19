@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mason test</title>
+    <style type="text/css">
+        body {
+            padding: 50px;
+        }
+
+        ul {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            width: 200px;
+            position: absolute;
+            -webkit-transition: top 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000), left 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            -moz-transition: top 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000), left 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            -ms-transition: top 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000), left 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+            transition: top 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000), left 300ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        }
+
+        li.size1 {
+            height: 200px;
+            background-color: #7FFFD4;
+        }
+
+        li.size2 {
+            height: 260px;
+            background-color: #40E0D0;
+        }
+
+        li.size3 {
+            height: 320px;
+            background-color: #00CED1;
+        }
+    </style>
+</head>
+<body>
+<h1>Resize the window to see Mason at work</h1>
+<ul>
+    <li class="size1"></li>
+    <li class="size2"></li>
+    <li class="size3"></li>
+    <li class="size1"></li>
+    <li class="size2"></li>
+    <li class="size3"></li>
+    <li class="size1"></li>
+    <li class="size2"></li>
+    <li class="size3"></li>
+    <li class="size1"></li>
+    <li class="size2"></li>
+    <li class="size3"></li>
+</ul>
+
+<script src="../build/mason.js"></script>
+<script>
+    "use strict";
+    var mason = new Mason(document.getElementsByTagName("ul")[0], "li", { gap: { x: 20, y: 20 }, throttled: 300 });
+</script>
+
+</body>
+</html>
