@@ -36,6 +36,8 @@ Options object looks like this:
 }
 ```
 
+Child elements must be positioned absolutely - I don't set this in JS because find it tasting bad.
+
 ## Test page
 Test page is provided in the package and requires no preparations - just open html and enjoy. Throttled update is used there.
 
